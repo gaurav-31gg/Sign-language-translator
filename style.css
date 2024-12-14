@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  video {
+    border: 2px solid #ccc;
+  }
+  
+  #capturesContainer {
+    margin-top: 20px;
+  }
+  
+  .capture {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .capture img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
