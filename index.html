@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capture Image and Text</title>
+  <title>Sign Language Demo</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+
+    .capture {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .capture img {
+      max-width: 200px;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Capture Image and Text</h1>
-    <video id="video" width="640" height="480" autoplay></video>
-    <br>
-    <input type="text" id="textInput" placeholder="Enter label text" />
-    <button id="captureButton">Capture</button>
-    <div id="capturesContainer"></div>
-  </div>
+  <h1>Sign Language Demo</h1>
+  <video id="video" autoplay></video>
+  <br>
+  <input id="textInput" type="text" placeholder="Enter text label">
+  <button id="captureButton">Capture Image</button>
+  <div id="capturesContainer"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
