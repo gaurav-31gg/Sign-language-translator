@@ -1,6 +1,6 @@
 
 
-## **Real-Time Sign Language Capture Project**
+## **Dynamic Sign Language Translator**
 ### **Documentation**
 
 ---
