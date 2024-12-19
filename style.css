@@ -1,84 +1,87 @@
-/* General body styling */
+/* This is for the body, like main page style */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f4f4f9;
-  }
-  
-  /* Styling for the video element */
-  #video {
-    width: 80%;
-    max-width: 600px;
-    border: 2px solid #333;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styling for input and button */
-  #textInput {
-    width: 80%;
-    max-width: 600px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  #captureButton {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #captureButton:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Styling for the captures container */
-  #capturesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-    justify-content: center;
-  }
-  
-  /* Styling for each capture */
-  .capture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .capture img {
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-  
-  .capture p {
-    margin: 0;
-    font-size: 14px;
-    color: #555;
-    text-align: center;
-  }
-  
+    font-family: Arial, sans-serif; /* Making all text use a nice font */
+    margin: 0; /* Remove extra space outside the page */
+    padding: 0; /* Also remove inside space */
+    display: flex; /* So items are organized in a row or column */
+    flex-direction: column; /* Items should go downwards (vertically) */
+    align-items: center; /* Keep everything in center horizontally */
+    justify-content: center; /* Also center them vertically */
+    min-height: 100vh; /* Page will always cover full screen height */
+    background-color: #f4f4f9; /* Light grayish background color */
+}
+
+/* This is for the webcam video box */
+#video {
+    width: 80%; /* Video will use 80% of the page width */
+    max-width: 600px; /* But it won't go wider than 600px */
+    border: 2px solid #333; /* Add a thick black border to it */
+    border-radius: 8px; /* Make edges rounded, looks cool */
+    margin-bottom: 20px; /* Add gap below the video */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for that fancy 3D effect */
+}
+
+/* Input box style (where user types text) */
+#textInput {
+    width: 80%; /* Same as video, 80% wide */
+    max-width: 600px; /* But don’t make it too big */
+    padding: 10px; /* Add space inside the box */
+    margin-bottom: 10px; /* Little gap below it */
+    border: 1px solid #ccc; /* Light border around it */
+    border-radius: 4px; /* Roundy corners */
+    font-size: 16px; /* Bigger text so easy to read */
+}
+
+/* The big button for capturing images */
+#captureButton {
+    padding: 10px 20px; /* Space inside the button, looks better */
+    background-color: #007BFF; /* Blue button color */
+    color: white; /* Text on button is white */
+    border: none; /* No borders for buttons, clean style */
+    border-radius: 4px; /* Make the button corners roundy */
+    font-size: 16px; /* Big text on the button */
+    cursor: pointer; /* Changes mouse icon when hovering */
+    transition: background-color 0.3s ease; /* Smooth color change when hover */
+}
+
+/* What happens when user moves mouse over button */
+#captureButton:hover {
+    background-color: #0056b3; /* Darker blue to show hover effect */
+}
+
+/* Style for the box holding all captured images */
+#capturesContainer {
+    display: flex; /* Put images side by side like row */
+    flex-wrap: wrap; /* If not enough space, go to next line */
+    gap: 15px; /* Add space between images */
+    margin-top: 20px; /* Gap from stuff above it */
+    justify-content: center; /* Center images horizontally */
+}
+
+/* Style for each captured image container */
+.capture {
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Items go one below other */
+    align-items: center; /* Center the items in middle */
+    width: 150px; /* Each box is 150px wide */
+    padding: 10px; /* Add little space inside the box */
+    background-color: white; /* White background, clean look */
+    border: 1px solid #ddd; /* Light border for a neat box */
+    border-radius: 8px; /* Roundy corners for boxes too */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add little shadow */
+}
+
+/* Style for images inside those capture boxes */
+.capture img {
+    width: 100%; /* Image will fill the box width */
+    border-radius: 4px; /* Make the image corners roundy */
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+/* Style for text labels under each captured image */
+.capture p {
+    margin: 0; /* Remove default space around the text */
+    font-size: 14px; /* Make text smaller */
+    color: #555; /* Use a gray color for text */
+    text-align: center; /* Center-align the text under the image */
+}
